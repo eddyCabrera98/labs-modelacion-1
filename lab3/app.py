@@ -58,7 +58,6 @@ if (simular1):
     max_final_value = np.max(final_values)
     transposed_lists = np.array(saved_by_year_by_sim).T
     monto_rendimiento_acumulado = np.mean(np.array([np.mean(group) for group in transposed_lists]))
-    st.text("Rendimiento promedio total al finalizar los 17 años")
     st.text(f"Rendimiento promedio total al finalizar los ${years} años: ${monto_rendimiento_acumulado:,.2f}")
     st.text(f"Monto promedio acumulado al finalizar los ${years} años: ${mean_final_value:,.2f}")
     st.text(f"Escenario pesimista después de ${years} años: ${min_final_value:,.2f}")
